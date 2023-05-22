@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Documentation API Indihealth',
+  title: 'Indihealth API documentation',
   tagline: 'Telemedicine',
   favicon: 'img/favicon.ico',
 
@@ -18,8 +18,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'Integrasi Telemedicine Indihealth', // Usually your repo name.
+  organizationName: 'indihealth', // Usually your GitHub org/user name.
+  projectName: 'documentation-api-yankes', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -63,21 +63,20 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
-      title: 'Indihealth API',
       navbar: {
-        title: 'Guide',
+        title: 'API Indihealth',
         logo: {
           alt: 'Indihealth',
-          src: 'img/logo.svg',
+          src: 'img/picture_logo.png',
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'API Reference',
+            label: 'Reference',
           },
-          {to: '/blog', label: 'Support', position: 'left'},
+          {to: '/support', label: 'Support', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
