@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "29d2f286-5ea5-4906-bd12-bb56ed212b6c",
+		"name": "Yankes ITB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12712513"
+	},
+	"item": [
+		{
+			"name": "Konsultasi",
+			"item": [
+				{
+					"name": "Pendaftaran Konsultasi",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "056ac848d188836d9d68cec96ef68cfe7f2d5873-d4b118c1-067e-4799-8feb-11829affb353",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"idPasien\": 100,\n    \"idJadwal\": 10,\n    \"idFasyankes\": 12345678\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/registrasi",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"registrasi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Jadwal Konsultasi",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "056ac848d188836d9d68cec96ef68cfe7f2d5873-d4b118c1-067e-4799-8feb-11829affb353",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/jadwal-konsultasi?idPasien=641",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"jadwal-konsultasi"
+							],
+							"query": [
+								{
+									"key": "idPasien",
+									"value": "641"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Jadwal Dokter",
+			"item": [
+				{
+					"name": "List Jadwal Dokter",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "056ac848d188836d9d68cec96ef68cfe7f2d5873-d4b118c1-067e-4799-8feb-11829affb353",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/jadwal-dokter/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"jadwal-dokter",
+								"list"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rekam Medik",
+			"item": [
+				{
+					"name": "Get Rekam Medik Detail",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "056ac848d188836d9d68cec96ef68cfe7f2d5873-d4b118c1-067e-4799-8feb-11829affb353",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/rekam-medik/25?idPasien=667",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"rekam-medik",
+								"25"
+							],
+							"query": [
+								{
+									"key": "idPasien",
+									"value": "667"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get List Rekam Medik",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "056ac848d188836d9d68cec96ef68cfe7f2d5873-d4b118c1-067e-4799-8feb-11829affb353",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/rekam-medik?idPasien=667",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"rekam-medik"
+							],
+							"query": [
+								{
+									"key": "idPasien",
+									"value": "667"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
