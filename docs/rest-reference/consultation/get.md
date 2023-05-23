@@ -11,7 +11,7 @@ Gets information about Consultation.
 
 <div class="card mb-5">
   <div class="card-body">
-    GET <a href="http://localhost:8000/api/v1/jadwal-konsultasi?idPasien=641">http://localhost:8000/api/v1/jadwal-konsultasi?idPasien=641.</a>
+    GET <a href="https://api-telecare-yankes-itb.indihealth.com/api/v1/jadwal-konsultasi?idPasien=641">https://api-telecare-yankes-itb.indihealth.com/api/v1/jadwal-konsultasi?idPasien=641.</a>
   </div>
 </div>
 

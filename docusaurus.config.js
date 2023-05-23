@@ -64,10 +64,10 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'API Indihealth',
+        title: 'IDH API',
         logo: {
           alt: 'Indihealth',
-          src: 'img/picture_logo.png',
+          src: 'img/logo-doc-api.png',
         },
         items: [
           {

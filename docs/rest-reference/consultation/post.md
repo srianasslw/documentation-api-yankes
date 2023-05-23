@@ -11,7 +11,7 @@ Create consultation in telemedicine.
 
 <div class="card mb-5">
   <div class="card-body">
-    POST <a href="http://localhost:8000/api/v1/registrasi">http://localhost:8000/api/v1/registrasi.</a>
+    POST <a href="https://api-telecare-yankes-itb.indihealth.com/api/v1/registrasi">https://api-telecare-yankes-itb.indihealth.com/api/v1/registrasi.</a>
   </div>
 </div>
 
